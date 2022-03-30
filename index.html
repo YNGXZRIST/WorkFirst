@@ -1,50 +1,57 @@
 <!doctype html>
 <html lang="ru">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport"
-		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Todo list</title>
-	<link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Todo list</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 <div class="wrapper">
-	<div class="todo-app">
-		<h1 class="header">...</h1>
-		<ul class="body">
-			<div class="helper">
-				<div>
-					<div class="number">7</div>
-					<div class="number">4</div>
-					<div class="number">1</div>
-					<div class="operation">+/-</div>
-				</div>
-				<div>
-					<div class="number">8</div>
-					<div class="number">5</div>
-					<div class="number">2</div>
-					<div class="number">0</div>
-				</div>
-				<div>
-					<div class="number">9</div>
-					<div class="number">6</div>
-					<div class="number">3</div>
-					<div class="operation">,</div>
-				</div>
-				<div>
-					<div class="operation">÷</div>
-					<div class="operation">×</div>
-					<div class="operation">-</div>
-					<div class="operation">+</div>
-				</div>
+    <div class="todo-app">
+        <h1 class="header"></h1>
+        <h1 class="header">
+            <div class="input">
+                ...
+            </div>
+        </h1>
+        <ul class="body">
+            <div class="helper">
+                <div>
+                    <button id="7" class="button" value="7">7</button>
+                    <button id="8" class="button" value="8">8</button>
+                    <button id="9" class="button" value="9">9</button>
+                    <button id="del" class="button">DEL</button>
+                </div>
+                <div>
+                    <button id="4" class="button" value="4" >4</button>
+                    <button id="5" class="button" value="5">5</button>
+                    <button id="6" class="button" value="6">6</button>
+                    <button id="multiply" class="button" value="*">×</button>
+                </div>
+                <div>
+                    <button id="1" class="button" value="1">1</button>
+                    <button id="2" class="button" value="2">2</button>
+                    <button id="3" class="button" value="3">3</button>
+                    <button id="divide" class="button" value="/">÷</button>
+                </div>
+                <div>
+                    <button id="change" class="button" value="+-">+/-</button>
+                    <button id="0" class="button" value="0" >0</button>
 
-			</div>
-			<div class="enter">=</div>
+                    <button id="minus" class="button" value="-">-</button>
+                    <button id="plus" class="button" value="+">+</button>
+                </div>
 
-		</ul>
+            </div>
+            <button id="enter" class="button">=</button>
 
-	</div>
+        </ul>
+
+        <script src="index.js"></script>
+    </div>
 </div>
 </body>
 </html>
